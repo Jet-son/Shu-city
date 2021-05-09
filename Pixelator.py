@@ -4,13 +4,16 @@ from sklearn.cluster import MiniBatchKMeans
 
 CLUSTERS = 4
 SIZE = 256
-FILENAME = 'Cave.JPG'
+FILENAME = 'Images/Cave.jpg'
 
 #PIXELATION STEP
 #----------------
 
 # Input image
-inim = cv2.imread(FILENAME)
+inim = cv2.imread('Images/Cave.jpg')
+
+cv2.imshow('test', inim)
+cv2.waitKey(0)
 
 # Get input size
 height, width = inim.shape[:2]
@@ -23,6 +26,8 @@ temp = cv2.resize(inim, (w, h), interpolation=cv2.INTER_LINEAR)
 
 # Initialize output image
 output = cv2.resize(temp, (width, height), interpolation=cv2.INTER_LINEAR)
+
+output = cv2.resize(temp, (width, height), interpolation=cv2.INTER_NEAREST)
 
 #QUANTIZE COLORS STEP
 #--------------------
@@ -50,5 +55,5 @@ quant = cv2.resize(quant, (512, 512))
 # Display images
 cv2.imshow("Input", inim)
 cv2.imshow("Quantized", quant)
-
+cv2.waitKey(0)
 
