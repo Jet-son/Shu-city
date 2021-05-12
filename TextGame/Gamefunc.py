@@ -29,7 +29,7 @@ def get_player_action():
 def do_player_action(act, item, player):
 
     if act == 'move':
-        move(player, player.locarray)
+        move(player, player.map)
     elif act == 'inspect':
         inspect(player)
     elif act == 'help':
