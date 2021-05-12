@@ -4,13 +4,13 @@ from sklearn.cluster import MiniBatchKMeans
 
 CLUSTERS = 4
 SIZE = 256
-FILENAME = 'Images/Cave.jpg'
+FILENAME = "Cave.JPG"
 
 #PIXELATION STEP
 #----------------
 
 # Input image
-inim = cv2.imread('Images/Cave.jpg')
+inim = cv2.imread("Cave.JPG")
 
 cv2.imshow('test', inim)
 cv2.waitKey(0)
@@ -56,4 +56,5 @@ quant = cv2.resize(quant, (512, 512))
 cv2.imshow("Input", inim)
 cv2.imshow("Quantized", quant)
 cv2.waitKey(0)
+cv2.destroyAllWindows()
 
