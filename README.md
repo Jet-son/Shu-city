@@ -3,8 +3,8 @@ Mostly text based adventure game
 
 ---------------------------------------------------------------------
 Project is split into two main sections right now:
-(1) TextGame
-(2) Graphics
+- TextGame
+- Graphics
 
 The TextGame directory contains files for running the game itself.
 This directory contains files for:
@@ -16,8 +16,8 @@ This directory contains files for:
 
 The Graphics directory contains the code for pixelating the images.
 This directory conatins files for:
--Main pixelator code
--Test images to test pixelator with
+- Main pixelator code
+- Test images to test pixelator with
 
 ---------------------------------------------------------------------
 
